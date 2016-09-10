@@ -23,8 +23,11 @@ var Pool = (function()
     {
       this._type = type;
       this._size = size;
+      this._pointer =size;
+      this._elements = [];
     }
   }
 
+// http://codepen.io/jeffibacache/pen/bzBsp?editors=0010
 
 })

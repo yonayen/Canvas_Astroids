@@ -32,10 +32,11 @@ var Pool = (function()
       for(i; i < length; ++i)
       {
         this._elements[i] = this._type.create();
+        this._elements[i] = this._type.create();
       }
     }
   }
-
+// fds
 // http://codepen.io/jeffibacache/pen/bzBsp?editors=0010
 
 })

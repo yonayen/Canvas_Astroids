@@ -32,11 +32,22 @@ var Pool = (function()
       for(i; i < length; ++i)
       {
         this._elements[i] = this._type.create();
-        this._elements[i] = this._type.create();
       }
+    },
+
+    getElement: function()
+    {
+      if(this._pointer > 0) return this._elements[--this._pointer];
+
+      return null;
+    },
+
+    disposeElement: function(obj)
+    {
+      this._elments[this._pointer++] = obj;
     }
-  }
-// fds
+  };
+
 // http://codepen.io/jeffibacache/pen/bzBsp?editors=0010
 
 })

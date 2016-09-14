@@ -48,6 +48,11 @@ var Pool = (function()
     }
   };
 
+  return {create:create};
+}();
+
 // http://codepen.io/jeffibacache/pen/bzBsp?editors=0010
 
-})
+//vec2d.js ...........................................................
+
+var Vec2D = (function()
